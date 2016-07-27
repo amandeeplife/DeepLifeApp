@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class login: UIViewController {
+    
+    
+    
+    
+    
+    @IBOutlet weak var swipablecontainer: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

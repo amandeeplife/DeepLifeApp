@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		07D809601D479E950069200E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8095F1D479E950069200E /* AppDelegate.swift */; };
-		07D809621D479E950069200E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809611D479E950069200E /* ViewController.swift */; };
+		07D809621D479E950069200E /* Swipemaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809611D479E950069200E /* Swipemaster.swift */; };
 		07D809651D479E950069200E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D809631D479E950069200E /* Main.storyboard */; };
 		07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07D809661D479E950069200E /* DeepLifeApp.xcdatamodeld */; };
 		07D8096A1D479E950069200E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D809691D479E950069200E /* Assets.xcassets */; };
 		07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D8096B1D479E950069200E /* LaunchScreen.storyboard */; };
 		07D809781D479E950069200E /* DeepLifeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809771D479E950069200E /* DeepLifeAppTests.swift */; };
 		07D809831D479E950069200E /* DeepLifeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809821D479E950069200E /* DeepLifeAppUITests.swift */; };
+		07D809961D47A3CD0069200E /* Swipe0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809941D47A3CD0069200E /* Swipe0.swift */; };
+		07D809971D47A3CD0069200E /* Swipe0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809951D47A3CD0069200E /* Swipe0.xib */; };
+		07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809981D47A4AA0069200E /* Swipe1.swift */; };
+		07D8099B1D47A4AA0069200E /* Swipe1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809991D47A4AA0069200E /* Swipe1.xib */; };
+		07D809A01D47A5F70069200E /* help_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D8099F1D47A5F70069200E /* help_1.png */; };
+		07D809A21D47A6070069200E /* help_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809A11D47A6070069200E /* help_2.png */; };
+		07D809A41D47A6140069200E /* help_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809A31D47A6140069200E /* help_3.png */; };
+		07D809AB1D47EA830069200E /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809AA1D47EA830069200E /* login.swift */; };
+		07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809AC1D47F32E0069200E /* Swipe2.swift */; };
+		07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809AD1D47F32E0069200E /* Swipe2.xib */; };
+		07D809B31D47F5C30069200E /* splashlogo_xhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */; };
+		07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B41D47FBFB0069200E /* icon_nav_man.png */; };
+		07D809B71D47FC0C0069200E /* icon_nav_schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B61D47FC0C0069200E /* icon_nav_schedule.png */; };
+		07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B81D47FC1E0069200E /* icon_nav_share.png */; };
+		07D809BB1D47FC3B0069200E /* icon_nav_learn.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809BA1D47FC3B0069200E /* icon_nav_learn.png */; };
+		07D809C21D4801DA0069200E /* disciplelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809C11D4801DA0069200E /* disciplelist.swift */; };
+		07D809C51D480B970069200E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D809C41D480B970069200E /* SWRevealViewController.m */; };
+		07D809CB1D4870020069200E /* menuu.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809CA1D4870020069200E /* menuu.png */; };
+		07D809CD1D4870260069200E /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809CC1D4870260069200E /* menubar.png */; };
+		07D809CF1D4870790069200E /* newsfeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809CE1D4870790069200E /* newsfeed.swift */; };
+		07D809D11D48715B0069200E /* schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809D01D48715B0069200E /* schedules.swift */; };
+		07D809D31D4871F60069200E /* share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809D21D4871F60069200E /* share.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +59,7 @@
 /* Begin PBXFileReference section */
 		07D8095C1D479E950069200E /* DeepLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D8095F1D479E950069200E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07D809611D479E950069200E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07D809611D479E950069200E /* Swipemaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipemaster.swift; sourceTree = "<group>"; };
 		07D809641D479E950069200E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07D809671D479E950069200E /* DeepLifeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepLifeApp.xcdatamodel; sourceTree = "<group>"; };
 		07D809691D479E950069200E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +71,30 @@
 		07D8097E1D479E950069200E /* DeepLifeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLifeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D809821D479E950069200E /* DeepLifeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLifeAppUITests.swift; sourceTree = "<group>"; };
 		07D809841D479E950069200E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D809941D47A3CD0069200E /* Swipe0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe0.swift; sourceTree = "<group>"; };
+		07D809951D47A3CD0069200E /* Swipe0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe0.xib; sourceTree = "<group>"; };
+		07D809981D47A4AA0069200E /* Swipe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe1.swift; sourceTree = "<group>"; };
+		07D809991D47A4AA0069200E /* Swipe1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe1.xib; sourceTree = "<group>"; };
+		07D8099F1D47A5F70069200E /* help_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_1.png; sourceTree = "<group>"; };
+		07D809A11D47A6070069200E /* help_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_2.png; sourceTree = "<group>"; };
+		07D809A31D47A6140069200E /* help_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_3.png; sourceTree = "<group>"; };
+		07D809AA1D47EA830069200E /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		07D809AC1D47F32E0069200E /* Swipe2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe2.swift; sourceTree = "<group>"; };
+		07D809AD1D47F32E0069200E /* Swipe2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe2.xib; sourceTree = "<group>"; };
+		07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashlogo_xhdpi.png; sourceTree = "<group>"; };
+		07D809B41D47FBFB0069200E /* icon_nav_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_man.png; sourceTree = "<group>"; };
+		07D809B61D47FC0C0069200E /* icon_nav_schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_schedule.png; sourceTree = "<group>"; };
+		07D809B81D47FC1E0069200E /* icon_nav_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_share.png; sourceTree = "<group>"; };
+		07D809BA1D47FC3B0069200E /* icon_nav_learn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_learn.png; sourceTree = "<group>"; };
+		07D809BD1D47FF4D0069200E /* DeepLifeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepLifeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		07D809C11D4801DA0069200E /* disciplelist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = disciplelist.swift; path = ../disciplelist.swift; sourceTree = "<group>"; };
+		07D809C31D480B970069200E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		07D809C41D480B970069200E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		07D809CA1D4870020069200E /* menuu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuu.png; sourceTree = "<group>"; };
+		07D809CC1D4870260069200E /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
+		07D809CE1D4870790069200E /* newsfeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = newsfeed.swift; path = ../newsfeed.swift; sourceTree = "<group>"; };
+		07D809D01D48715B0069200E /* schedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schedules.swift; sourceTree = "<group>"; };
+		07D809D21D4871F60069200E /* share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = share.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +125,9 @@
 		07D809531D479E950069200E = {
 			isa = PBXGroup;
 			children = (
+				07D809BC1D47FF190069200E /* Helpers */,
+				07D809A91D47AE250069200E /* Swipable */,
+				07D8099C1D47A5C00069200E /* Images */,
 				07D8095E1D479E950069200E /* DeepLifeApp */,
 				07D809761D479E950069200E /* DeepLifeAppTests */,
 				07D809811D479E950069200E /* DeepLifeAppUITests */,
@@ -99,13 +148,18 @@
 		07D8095E1D479E950069200E /* DeepLifeApp */ = {
 			isa = PBXGroup;
 			children = (
+				07D809CE1D4870790069200E /* newsfeed.swift */,
+				07D809C11D4801DA0069200E /* disciplelist.swift */,
 				07D8095F1D479E950069200E /* AppDelegate.swift */,
-				07D809611D479E950069200E /* ViewController.swift */,
+				07D809611D479E950069200E /* Swipemaster.swift */,
 				07D809631D479E950069200E /* Main.storyboard */,
+				07D809AA1D47EA830069200E /* login.swift */,
 				07D809691D479E950069200E /* Assets.xcassets */,
 				07D8096B1D479E950069200E /* LaunchScreen.storyboard */,
 				07D8096E1D479E950069200E /* Info.plist */,
 				07D809661D479E950069200E /* DeepLifeApp.xcdatamodeld */,
+				07D809D01D48715B0069200E /* schedules.swift */,
+				07D809D21D4871F60069200E /* share.swift */,
 			);
 			path = DeepLifeApp;
 			sourceTree = "<group>";
@@ -126,6 +180,46 @@
 				07D809841D479E950069200E /* Info.plist */,
 			);
 			path = DeepLifeAppUITests;
+			sourceTree = "<group>";
+		};
+		07D8099C1D47A5C00069200E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07D809CC1D4870260069200E /* menubar.png */,
+				07D809CA1D4870020069200E /* menuu.png */,
+				07D809BA1D47FC3B0069200E /* icon_nav_learn.png */,
+				07D809B81D47FC1E0069200E /* icon_nav_share.png */,
+				07D809B61D47FC0C0069200E /* icon_nav_schedule.png */,
+				07D809B41D47FBFB0069200E /* icon_nav_man.png */,
+				07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */,
+				07D809A31D47A6140069200E /* help_3.png */,
+				07D809A11D47A6070069200E /* help_2.png */,
+				07D8099F1D47A5F70069200E /* help_1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		07D809A91D47AE250069200E /* Swipable */ = {
+			isa = PBXGroup;
+			children = (
+				07D809981D47A4AA0069200E /* Swipe1.swift */,
+				07D809991D47A4AA0069200E /* Swipe1.xib */,
+				07D809941D47A3CD0069200E /* Swipe0.swift */,
+				07D809951D47A3CD0069200E /* Swipe0.xib */,
+				07D809AC1D47F32E0069200E /* Swipe2.swift */,
+				07D809AD1D47F32E0069200E /* Swipe2.xib */,
+			);
+			name = Swipable;
+			sourceTree = "<group>";
+		};
+		07D809BC1D47FF190069200E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07D809C31D480B970069200E /* SWRevealViewController.h */,
+				07D809C41D480B970069200E /* SWRevealViewController.m */,
+				07D809BD1D47FF4D0069200E /* DeepLifeApp-Bridging-Header.h */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +329,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D809CB1D4870020069200E /* menuu.png in Resources */,
+				07D809A41D47A6140069200E /* help_3.png in Resources */,
 				07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */,
 				07D8096A1D479E950069200E /* Assets.xcassets in Resources */,
+				07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */,
+				07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */,
+				07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */,
+				07D809B71D47FC0C0069200E /* icon_nav_schedule.png in Resources */,
+				07D809CD1D4870260069200E /* menubar.png in Resources */,
 				07D809651D479E950069200E /* Main.storyboard in Resources */,
+				07D809B31D47F5C30069200E /* splashlogo_xhdpi.png in Resources */,
+				07D8099B1D47A4AA0069200E /* Swipe1.xib in Resources */,
+				07D809A01D47A5F70069200E /* help_1.png in Resources */,
+				07D809BB1D47FC3B0069200E /* icon_nav_learn.png in Resources */,
+				07D809971D47A3CD0069200E /* Swipe0.xib in Resources */,
+				07D809A21D47A6070069200E /* help_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D809621D479E950069200E /* ViewController.swift in Sources */,
+				07D809621D479E950069200E /* Swipemaster.swift in Sources */,
+				07D809D31D4871F60069200E /* share.swift in Sources */,
 				07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */,
+				07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */,
+				07D809D11D48715B0069200E /* schedules.swift in Sources */,
+				07D809C21D4801DA0069200E /* disciplelist.swift in Sources */,
 				07D809601D479E950069200E /* AppDelegate.swift in Sources */,
+				07D809C51D480B970069200E /* SWRevealViewController.m in Sources */,
+				07D809CF1D4870790069200E /* newsfeed.swift in Sources */,
+				07D809AB1D47EA830069200E /* login.swift in Sources */,
+				07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */,
+				07D809961D47A3CD0069200E /* Swipe0.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,10 +524,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DeepLifeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepLifeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -419,10 +538,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DeepLifeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepLifeApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
