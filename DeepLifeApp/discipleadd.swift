@@ -7,11 +7,14 @@
 //
 
 import UIKit
-import CoreData
 
 class login: UIViewController {
     
     
+    
+    
+    
+    @IBOutlet weak var swipablecontainer: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
