@@ -18,11 +18,12 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
     
     
     
+    @IBOutlet weak var sex: UITextField!
+    @IBOutlet weak var Phone: UITextField!
     
     
     
-    var Country: String = ""
-    @IBOutlet weak var discemail: UITextField!
+        @IBOutlet weak var discemail: UITextField!
     @IBOutlet weak var discname: UITextField!
     
     @IBOutlet weak var disccountry: UITextField!
@@ -45,6 +46,8 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
             discname.text = disc?.fullname
             discemail.text = disc?.country
             disccountry.text = disc?.email
+            sex.text = disc?.sex
+            Phone.text = disc?.phonenumber
       //    imageHolder.image = UIImage(data: (disc?.image)!)
         }
         
@@ -135,6 +138,8 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
         disc?.fullname = discname.text
         disc?.country = discemail.text
         disc?.email = disccountry.text
+        disc?.phonenumber = Phone.text
+        disc?.sex = sex.text
      //  disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {

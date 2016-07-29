@@ -479,7 +479,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xS3-cG-Sxr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xS3-cG-Sxr">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="y7k-7j-AYB"/>
@@ -497,6 +497,18 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo_ldpi.png" translatesAutoresizingMaskIntoConstraints="NO" id="WVd-Qh-Ajg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.68627450980000004" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sex" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atI-Qn-8dC">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="388" width="295" height="30"/>
+                                </variation>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Please fill the data carefully" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-bU-wXK">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.6705882353" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -511,26 +523,13 @@
                                         <exclude reference="oEe-3q-RF8"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-6" y="436" width="400" height="28"/>
                                     <mask key="constraints">
                                         <include reference="oEe-3q-RF8"/>
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo_ldpi.png" translatesAutoresizingMaskIntoConstraints="NO" id="WVd-Qh-Ajg">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.090196078430000007" green="0.68627450980000004" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-VO-6CO">
-                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="452" width="400" height="73"/>
-                                </variation>
-                                <connections>
-                                    <outlet property="dataSource" destination="HSv-Fl-BX0" id="0aH-Z7-B84"/>
-                                    <outlet property="delegate" destination="HSv-Fl-BX0" id="gQ5-l0-Lxg"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -566,9 +565,9 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xS3-cG-Sxr"/>
-                                <exclude reference="HhA-bU-wXK"/>
                                 <exclude reference="WVd-Qh-Ajg"/>
-                                <exclude reference="dQA-VO-6CO"/>
+                                <exclude reference="atI-Qn-8dC"/>
+                                <exclude reference="HhA-bU-wXK"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="K81-7W-cE5"/>
@@ -595,9 +594,9 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="xS3-cG-Sxr"/>
-                                <include reference="HhA-bU-wXK"/>
                                 <include reference="WVd-Qh-Ajg"/>
-                                <include reference="dQA-VO-6CO"/>
+                                <include reference="atI-Qn-8dC"/>
+                                <include reference="HhA-bU-wXK"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="K81-7W-cE5"/>
@@ -644,9 +643,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="disccountry" destination="dQA-VO-6CO" id="tR8-Kc-9bL"/>
+                        <outlet property="Phone" destination="xS3-cG-Sxr" id="a6S-lW-jGo"/>
                         <outlet property="discemail" destination="OgG-gD-pxc" id="eUW-PD-gRb"/>
                         <outlet property="discname" destination="cm7-fY-Ask" id="SVA-86-9Bi"/>
+                        <outlet property="sex" destination="atI-Qn-8dC" id="XDr-SD-dSl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJb-0w-lSZ" sceneMemberID="firstResponder"/>
