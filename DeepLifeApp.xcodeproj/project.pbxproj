@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07512E861D4BC4D100FC70A9 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 07512E851D4BC4D100FC70A9 /* phone.png */; };
 		078654751D4A468300D61689 /* Discedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078654741D4A468300D61689 /* Discedit.swift */; };
 		078654771D4B4EE700D61689 /* iconsocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654761D4B4EE700D61689 /* iconsocial.png */; };
 		078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654781D4B4F1800D61689 /* icon_nav_facebook.png */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07512E851D4BC4D100FC70A9 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		078654741D4A468300D61689 /* Discedit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discedit.swift; sourceTree = "<group>"; };
 		078654761D4B4EE700D61689 /* iconsocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsocial.png; sourceTree = "<group>"; };
 		078654781D4B4F1800D61689 /* icon_nav_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_facebook.png; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 		07D8099C1D47A5C00069200E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				07512E851D4BC4D100FC70A9 /* phone.png */,
 				0786547E1D4B64F200D61689 /* icon_nav_facebook.png */,
 				0786547C1D4B635300D61689 /* line.png */,
 				078654781D4B4F1800D61689 /* icon_nav_facebook.png */,
@@ -378,6 +381,7 @@
 				07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */,
 				07D8096A1D479E950069200E /* Assets.xcassets in Resources */,
 				07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */,
+				07512E861D4BC4D100FC70A9 /* phone.png in Resources */,
 				078654771D4B4EE700D61689 /* iconsocial.png in Resources */,
 				07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */,
 				07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */,

@@ -48,7 +48,7 @@ class MainTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         if revealViewController() != nil {
             //            revealViewController().rearViewRevealWidth = 62
             menubar.target = revealViewController()
-            menubar.action = #selector(SWRevealViewController.revealToggle(_:))
+            menubar.action = "revealToggle:"
             
             revealViewController().rightViewRevealWidth = 150
             menubar.target = revealViewController()
@@ -136,9 +136,9 @@ class MainTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         
         let disclst = frc.objectAtIndexPath(indexPath) as! Disciplelistt
         cell.textLabel?.text = disclst.fullname
-        let disccounttry = disclst.country
-        let discemaill = disclst.email
-        cell.detailTextLabel!.text = "Country: \(discemaill!) Email: \(disccounttry!)"
+        let discemail = disclst.email
+        let discphone = disclst.phonenumber
+        cell.detailTextLabel!.text = "Contact : \(discphone!)  "
         cell.imageView?.image = UIImage(data: (disclst.image)!)
         
         
@@ -200,13 +200,13 @@ class MainTVC: UITableViewController, NSFetchedResultsControllerDelegate {
             
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPathForCell(cell)
-            let itemController : Discadd = segue.destinationViewController as! Discadd
+            let itemController : Discedit = segue.destinationViewController as! Discedit
             let disclst : Disciplelistt = frc.objectAtIndexPath(indexPath!) as! Disciplelistt
             itemController.disc = disclst
             
         }
         
-    }
+           }
     
     
 }

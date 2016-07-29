@@ -9,39 +9,24 @@
 import UIKit
 import CoreData
 
-
 class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var disc : Disciplelistt? = nil
-  
     
-    @IBOutlet weak var discname: UITextField!
-    
-    
-    @IBOutlet weak var discemail: UITextField!
-    
-    @IBOutlet weak var disccountry: UITextField!
+    @IBOutlet weak var itemName: UITextField!
+    @IBOutlet weak var itemNote: UITextField!
+    @IBOutlet weak var itemQty: UITextField!
     @IBOutlet weak var imageHolder: UIImageView!
-    /*
-    @IBOutlet weak var buildstagecontainer: UIView!
-    @IBOutlet weak var discemail: UITextField!
-    @IBOutlet weak var discname: UITextField!
     
-    @IBOutlet weak var disccountry: UITextField!
-    
-    @IBOutlet weak var imageHolder: UIImageView!
-    */
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-               
-        
         if disc != nil {
-            discname.text = disc?.fullname
-            discemail.text = disc?.country
-            disccountry.text = disc?.email
+            itemName.text = disc?.fullname
+            itemNote.text = disc?.country
+            itemQty.text = disc?.email
             imageHolder.image = UIImage(data: (disc?.image)!)
         }
         
@@ -84,9 +69,9 @@ class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePic
     @IBAction func saveTapped(sender: AnyObject) {
         
         if disc != nil {
-            editDisc()
+            editItem()
         } else {
-            createNewDisc()
+            createNewItem()
         }
         
         dismissVC()
@@ -106,16 +91,16 @@ class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePic
         
     }
     
-    func createNewDisc() {
+    func createNewItem() {
         
         let entityDescription = NSEntityDescription.entityForName("Disciples", inManagedObjectContext: moc)
         
-        let disclistattributes = Disciplelistt(entity: entityDescription!, insertIntoManagedObjectContext: moc)
+        let item = Disciplelistt(entity: entityDescription!, insertIntoManagedObjectContext: moc)
         
-        disclistattributes.fullname = discname.text
-        disclistattributes.country = discemail.text
-        disclistattributes.email = disccountry.text
-        disclistattributes.image = UIImagePNGRepresentation(imageHolder.image!)
+        item.fullname = itemName.text
+        item.country = itemNote.text
+        item.email = itemQty.text
+        item.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()
@@ -125,11 +110,11 @@ class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePic
         
     }
     
-    func editDisc() {
+    func editItem() {
         
-        disc?.fullname = discname.text
-        disc?.country = discemail.text
-        disc?.email = disccountry.text
+        disc?.fullname = itemName.text
+        disc?.country = itemNote.text
+        disc?.email = itemQty.text
         disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {

@@ -13,19 +13,27 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
     
     var disc : Disciplelistt? = nil
     
+    @IBOutlet weak var phone: UITextField!
+   
     @IBOutlet weak var discname: UITextField!
-    @IBOutlet weak var disccountry: UITextField!
+    
+    //@IBOutlet weak var discountry: UITextField!
     @IBOutlet weak var discemail: UITextField!
-    @IBOutlet weak var imageHolder: UIImageView!
+    // @IBOutlet weak var discname: UITextField!
+   // @IBOutlet weak var discountry: UITextField!
+    //@IBOutlet weak var discemail: UITextField!
+  @IBOutlet weak var imageHolder: UIImageView!
     
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         if disc != nil {
             discname.text = disc?.fullname
-            disccountry.text = disc?.country
+            phone.text = disc?.phonenumber
             discemail.text = disc?.email
             imageHolder.image = UIImage(data: (disc?.image)!)
         }
@@ -98,7 +106,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         let item = Disciplelistt(entity: entityDescription!, insertIntoManagedObjectContext: moc)
         
         item.fullname = discname.text
-        item.country = disccountry.text
+        item.phonenumber = phone.text
         item.email = discemail.text
         item.image = UIImagePNGRepresentation(imageHolder.image!)
         
@@ -113,7 +121,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
     func editItem() {
         
         disc?.fullname = discname.text
-        disc?.country = disccountry.text
+        disc?.phonenumber = phone.text
         disc?.email = discemail.text
         disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
