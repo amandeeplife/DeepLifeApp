@@ -9,46 +9,25 @@
 import UIKit
 import CoreData
 
-
-class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var disc : Disciplelistt? = nil
     
-    
-    
-    
-    
-    @IBOutlet weak var sex: UITextField!
-    @IBOutlet weak var Phone: UITextField!
-    
-    
-    
-        @IBOutlet weak var discemail: UITextField!
     @IBOutlet weak var discname: UITextField!
-    
     @IBOutlet weak var disccountry: UITextField!
-    
-   // @IBOutlet weak var imageHolder: UIImageView!
-    //@IBOutlet weak var discname: UITextField!
-    //@IBOutlet weak var discemail: UITextField!
-    //@IBOutlet weak var disccountry: UITextField!
-    //@IBOutlet weak var imageHolder: UIImageView!
+    @IBOutlet weak var discemail: UITextField!
+    @IBOutlet weak var imageHolder: UIImageView!
     
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // imageHolder.layer.cornerRadius = imageHolder.frame.size.width/2
-        //imageHolder.clipsToBounds = true
-                
         if disc != nil {
             discname.text = disc?.fullname
-            discemail.text = disc?.country
-            disccountry.text = disc?.email
-            sex.text = disc?.sex
-            Phone.text = disc?.phonenumber
-      //    imageHolder.image = UIImage(data: (disc?.image)!)
+            disccountry.text = disc?.country
+            discemail.text = disc?.email
+            imageHolder.image = UIImage(data: (disc?.image)!)
         }
         
     }
@@ -84,22 +63,20 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-   //     self.imageHolder.image = image
+        self.imageHolder.image = image
     }
     
     @IBAction func saveTapped(sender: AnyObject) {
         
         if disc != nil {
-            editDisc()
+            editItem()
         } else {
-            createNewDisc()
+            createNewItem()
         }
         
         dismissVC()
         
     }
-    
-    
     
     @IBAction func cancelTapped(sender: AnyObject) {
         
@@ -114,16 +91,16 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
         
     }
     
-    func createNewDisc() {
+    func createNewItem() {
         
         let entityDescription = NSEntityDescription.entityForName("Disciples", inManagedObjectContext: moc)
         
-        let disclistattributes = Disciplelistt(entity: entityDescription!, insertIntoManagedObjectContext: moc)
+        let item = Disciplelistt(entity: entityDescription!, insertIntoManagedObjectContext: moc)
         
-        disclistattributes.fullname = discname.text
-        disclistattributes.country = discemail.text
-        disclistattributes.email = disccountry.text
-     //   disclistattributes.image = UIImagePNGRepresentation(imageHolder.image!)
+        item.fullname = discname.text
+        item.country = disccountry.text
+        item.email = discemail.text
+        item.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()
@@ -133,14 +110,12 @@ class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePicke
         
     }
     
-    func editDisc() {
+    func editItem() {
         
         disc?.fullname = discname.text
-        disc?.country = discemail.text
-        disc?.email = disccountry.text
-        disc?.phonenumber = Phone.text
-        disc?.sex = sex.text
-     //  disc!.image = UIImagePNGRepresentation(imageHolder.image!)
+        disc?.country = disccountry.text
+        disc?.email = discemail.text
+        disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()

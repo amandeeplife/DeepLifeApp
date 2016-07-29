@@ -35,53 +35,5 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DeepLifeApp/Discadd.swift"
-            timestampString = "491487562.372798"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "Discadd"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DeepLifeApp.Discadd.__deallocating_deinit"
-                  moduleName = "DeepLifeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Aman/Documents/DeepLifeSEA/DeepLifeApp/DeepLifeApp/Discadd.swift"
-                  timestampString = "491489238.501838"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DeepLifeApp.Discadd.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DeepLifeApp.Discadd&gt;"
-                  moduleName = "DeepLifeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Aman/Documents/DeepLifeSEA/DeepLifeApp/DeepLifeApp/Discadd.swift"
-                  timestampString = "491489238.502072"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -48,7 +48,7 @@ class MainTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         if revealViewController() != nil {
             //            revealViewController().rearViewRevealWidth = 62
             menubar.target = revealViewController()
-            menubar.action = "revealToggle:"
+            menubar.action = #selector(SWRevealViewController.revealToggle(_:))
             
             revealViewController().rightViewRevealWidth = 150
             menubar.target = revealViewController()
