@@ -10,36 +10,39 @@ import UIKit
 import CoreData
 
 
-class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var disc : Disciplelistt? = nil
+  
+    
+    @IBOutlet weak var discname: UITextField!
     
     
+    @IBOutlet weak var discemail: UITextField!
+    
+    @IBOutlet weak var disccountry: UITextField!
+    @IBOutlet weak var imageHolder: UIImageView!
+    /*
+    @IBOutlet weak var buildstagecontainer: UIView!
     @IBOutlet weak var discemail: UITextField!
     @IBOutlet weak var discname: UITextField!
     
     @IBOutlet weak var disccountry: UITextField!
     
     @IBOutlet weak var imageHolder: UIImageView!
-    //@IBOutlet weak var discname: UITextField!
-    //@IBOutlet weak var discemail: UITextField!
-    //@IBOutlet weak var disccountry: UITextField!
-    //@IBOutlet weak var imageHolder: UIImageView!
-    
+    */
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageHolder.layer.cornerRadius = imageHolder.frame.size.width/2
-        imageHolder.clipsToBounds = true
-        
+               
         
         if disc != nil {
             discname.text = disc?.fullname
             discemail.text = disc?.country
             disccountry.text = disc?.email
-          imageHolder.image = UIImage(data: (disc?.image)!)
+            imageHolder.image = UIImage(data: (disc?.image)!)
         }
         
     }
@@ -127,7 +130,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         disc?.fullname = discname.text
         disc?.country = discemail.text
         disc?.email = disccountry.text
-       disc!.image = UIImagePNGRepresentation(imageHolder.image!)
+        disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()

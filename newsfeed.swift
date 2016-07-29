@@ -35,6 +35,7 @@ class newsfeed: UIViewController {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
             
+            
         }
         
     }

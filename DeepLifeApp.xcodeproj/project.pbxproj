@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078654751D4A468300D61689 /* Discedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078654741D4A468300D61689 /* Discedit.swift */; };
+		078654771D4B4EE700D61689 /* iconsocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654761D4B4EE700D61689 /* iconsocial.png */; };
+		078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654781D4B4F1800D61689 /* icon_nav_facebook.png */; };
+		0786547B1D4B620500D61689 /* menuslide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786547A1D4B620500D61689 /* menuslide.swift */; };
+		0786547D1D4B635300D61689 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0786547C1D4B635300D61689 /* line.png */; };
+		0786547F1D4B64F200D61689 /* icon_nav_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0786547E1D4B64F200D61689 /* icon_nav_facebook.png */; };
 		07D809601D479E950069200E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8095F1D479E950069200E /* AppDelegate.swift */; };
 		07D809621D479E950069200E /* Swipemaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809611D479E950069200E /* Swipemaster.swift */; };
 		07D809651D479E950069200E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D809631D479E950069200E /* Main.storyboard */; };
@@ -44,6 +50,7 @@
 		07D80A031D48AB150069200E /* icondisciple.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A021D48AB150069200E /* icondisciple.png */; };
 		07D80A051D48AB370069200E /* adddisciple.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A041D48AB370069200E /* adddisciple.png */; };
 		07D80A071D48AB610069200E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A061D48AB610069200E /* back.png */; };
+		07D80A091D48E07C0069200E /* menuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D80A081D48E07C0069200E /* menuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		078654741D4A468300D61689 /* Discedit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discedit.swift; sourceTree = "<group>"; };
+		078654761D4B4EE700D61689 /* iconsocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsocial.png; sourceTree = "<group>"; };
+		078654781D4B4F1800D61689 /* icon_nav_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_facebook.png; sourceTree = "<group>"; };
+		0786547A1D4B620500D61689 /* menuslide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuslide.swift; sourceTree = "<group>"; };
+		0786547C1D4B635300D61689 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		0786547E1D4B64F200D61689 /* icon_nav_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_facebook.png; sourceTree = "<group>"; };
 		07D8095C1D479E950069200E /* DeepLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D8095F1D479E950069200E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D809611D479E950069200E /* Swipemaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipemaster.swift; sourceTree = "<group>"; };
@@ -109,6 +122,7 @@
 		07D80A021D48AB150069200E /* icondisciple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icondisciple.png; sourceTree = "<group>"; };
 		07D80A041D48AB370069200E /* adddisciple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adddisciple.png; sourceTree = "<group>"; };
 		07D80A061D48AB610069200E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		07D80A081D48E07C0069200E /* menuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = menuController.swift; path = ../menuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +178,7 @@
 		07D8095E1D479E950069200E /* DeepLifeApp */ = {
 			isa = PBXGroup;
 			children = (
+				07D80A081D48E07C0069200E /* menuController.swift */,
 				07D809CE1D4870790069200E /* newsfeed.swift */,
 				07D8095F1D479E950069200E /* AppDelegate.swift */,
 				07D809611D479E950069200E /* Swipemaster.swift */,
@@ -177,6 +192,8 @@
 				07D809D21D4871F60069200E /* share.swift */,
 				07D809F01D4882930069200E /* login.swift */,
 				07D809FE1D489F1A0069200E /* disctable.swift */,
+				078654741D4A468300D61689 /* Discedit.swift */,
+				0786547A1D4B620500D61689 /* menuslide.swift */,
 			);
 			path = DeepLifeApp;
 			sourceTree = "<group>";
@@ -202,6 +219,10 @@
 		07D8099C1D47A5C00069200E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0786547E1D4B64F200D61689 /* icon_nav_facebook.png */,
+				0786547C1D4B635300D61689 /* line.png */,
+				078654781D4B4F1800D61689 /* icon_nav_facebook.png */,
+				078654761D4B4EE700D61689 /* iconsocial.png */,
 				07D80A061D48AB610069200E /* back.png */,
 				07D80A041D48AB370069200E /* adddisciple.png */,
 				07D80A021D48AB150069200E /* icondisciple.png */,
@@ -352,9 +373,12 @@
 			files = (
 				07D809CB1D4870020069200E /* menuu.png in Resources */,
 				07D809A41D47A6140069200E /* help_3.png in Resources */,
+				078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */,
+				0786547D1D4B635300D61689 /* line.png in Resources */,
 				07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */,
 				07D8096A1D479E950069200E /* Assets.xcassets in Resources */,
 				07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */,
+				078654771D4B4EE700D61689 /* iconsocial.png in Resources */,
 				07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */,
 				07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */,
 				07D809B71D47FC0C0069200E /* icon_nav_schedule.png in Resources */,
@@ -369,6 +393,7 @@
 				07D80A071D48AB610069200E /* back.png in Resources */,
 				07D809971D47A3CD0069200E /* Swipe0.xib in Resources */,
 				07D809A21D47A6070069200E /* help_2.png in Resources */,
+				0786547F1D4B64F200D61689 /* icon_nav_facebook.png in Resources */,
 				07D80A031D48AB150069200E /* icondisciple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,10 +427,13 @@
 				07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */,
 				07D809D11D48715B0069200E /* schedules.swift in Sources */,
 				07D809F11D4882930069200E /* login.swift in Sources */,
+				07D80A091D48E07C0069200E /* menuController.swift in Sources */,
 				07D809FA1D4887FF0069200E /* Disciplelist+CoreDataProperties.swift in Sources */,
+				078654751D4A468300D61689 /* Discedit.swift in Sources */,
 				07D809601D479E950069200E /* AppDelegate.swift in Sources */,
 				07D809C51D480B970069200E /* SWRevealViewController.m in Sources */,
 				07D809CF1D4870790069200E /* newsfeed.swift in Sources */,
+				0786547B1D4B620500D61689 /* menuslide.swift in Sources */,
 				07D809AB1D47EA830069200E /* Discadd.swift in Sources */,
 				07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */,
 				07D809961D47A3CD0069200E /* Swipe0.swift in Sources */,
