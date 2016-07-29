@@ -10,7 +10,12 @@ import UIKit
 import CoreData
 
 class MainTVC: UITableViewController, NSFetchedResultsControllerDelegate {
-    
+
+ 
+    @IBAction func samole(sender: AnyObject) {
+        
+        
+    }
    
     @IBOutlet weak var menubar: UIBarButtonItem!
         

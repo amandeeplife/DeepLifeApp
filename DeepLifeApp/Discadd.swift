@@ -10,17 +10,24 @@ import UIKit
 import CoreData
 
 
-class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class Discadd: UIViewController,NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var disc : Disciplelistt? = nil
     
     
+    
+    
+    
+    
+    
+    
+    var Country: String = ""
     @IBOutlet weak var discemail: UITextField!
     @IBOutlet weak var discname: UITextField!
     
     @IBOutlet weak var disccountry: UITextField!
     
-    @IBOutlet weak var imageHolder: UIImageView!
+   // @IBOutlet weak var imageHolder: UIImageView!
     //@IBOutlet weak var discname: UITextField!
     //@IBOutlet weak var discemail: UITextField!
     //@IBOutlet weak var disccountry: UITextField!
@@ -31,15 +38,14 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageHolder.layer.cornerRadius = imageHolder.frame.size.width/2
-        imageHolder.clipsToBounds = true
-        
-        
+       // imageHolder.layer.cornerRadius = imageHolder.frame.size.width/2
+        //imageHolder.clipsToBounds = true
+                
         if disc != nil {
             discname.text = disc?.fullname
             discemail.text = disc?.country
             disccountry.text = disc?.email
-          imageHolder.image = UIImage(data: (disc?.image)!)
+      //    imageHolder.image = UIImage(data: (disc?.image)!)
         }
         
     }
@@ -75,7 +81,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        self.imageHolder.image = image
+   //     self.imageHolder.image = image
     }
     
     @IBAction func saveTapped(sender: AnyObject) {
@@ -89,6 +95,8 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         dismissVC()
         
     }
+    
+    
     
     @IBAction func cancelTapped(sender: AnyObject) {
         
@@ -112,7 +120,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         disclistattributes.fullname = discname.text
         disclistattributes.country = discemail.text
         disclistattributes.email = disccountry.text
-        disclistattributes.image = UIImagePNGRepresentation(imageHolder.image!)
+     //   disclistattributes.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()
@@ -127,7 +135,7 @@ class Discadd: UIViewController, NSFetchedResultsControllerDelegate, UIImagePick
         disc?.fullname = discname.text
         disc?.country = discemail.text
         disc?.email = disccountry.text
-       disc!.image = UIImagePNGRepresentation(imageHolder.image!)
+     //  disc!.image = UIImagePNGRepresentation(imageHolder.image!)
         
         do {
             try moc.save()
